@@ -1,0 +1,10 @@
+axis,tier,lower_edge,upper_edge
+volatility,T1_low,-inf,0.00020337974806308528
+volatility,T2_mid,0.00020337974806308528,0.0003464099649395895
+volatility,T3_high,0.0003464099649395895,inf
+liquidity,T1_low,-inf,7908483.544545451
+liquidity,T2_mid,7908483.544545451,22962772.23757575
+liquidity,T3_high,22962772.23757575,inf
+imbalance_magnitude,T1_low,-inf,0.07928913452324204
+imbalance_magnitude,T2_mid,0.07928913452324204,0.2197743684111966
+imbalance_magnitude,T3_high,0.2197743684111966,inf
