@@ -3,8 +3,10 @@
 ## Introduction
 
 The main question that I wish to answer is as follows:
-
 - What information in the final 10 minutes of the Nasdaq closing auction actually predicts short-horizon relative price movements and how does that information change as the auction approaches the close
+
+For full explanation, results and analysis please refer to the [report.pdf](report.pdf)
+For the complete code and output log please refer to the [kaggle run](https://www.kaggle.com/code/shaury4/research-notebook)
 
 The data is from the [Optiver - Trading at the Close](https://www.kaggle.com/competitions/optiver-trading-at-the-close/overview) Kaggle competition (200 stocks, 481 days, about 5.2 million rows). The target is the 60 second future move in the WAP of a stock minus the same move of a synthetic index, in basis points. The data is split by date so that future information does not get into the training. We use Ridge regression and LightGBM.
 
@@ -60,3 +62,5 @@ The project is based on the following hypotheses:
 - The model works for almost all the stocks (correlation is positive for 99%) and the difference between stocks is stable over time
 - Wide spread stocks are the most predictable (correlation 0.13 for the narrowest third vs 0.21 for the widest third), since the WAP effect is bigger when the spread is wider. Volatile stocks look more predictable only because they have wide spreads. Stocks that usually have large imbalances are less predictable and matched size shows no relation
 - The order book information matters more for low liquidity stocks, while auction imbalance matters about the same for all stocks
+
+TO BE CONTINUED...
